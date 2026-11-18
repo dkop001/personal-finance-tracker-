@@ -1,0 +1,12 @@
+id,title,category,location,priority,status,raised_on,closed_on,raised_by
+1,Projector dead in Lab 2,ELECTRICAL,Lab 2,CRITICAL,RESOLVED,2026-11-08,2026-11-19,operator
+2,Broken bench in 8-B,FURNITURE,Room 8-B,MEDIUM,OPEN,2026-11-16,None,operator
+3,Water cooler leaking,PLUMBING,Corridor A,HIGH,OPEN,2026-11-10,None,operator
+4,Fan noise in library,ELECTRICAL,Library,LOW,OPEN,2026-11-17,None,operator
+5,Whiteboard stained,FURNITURE,Room 9-A,LOW,RESOLVED,2026-11-05,None,operator
+6,Cricket net torn,SPORTS,Ground,MEDIUM,OPEN,2026-11-13,None,operator
+7,Computer 4 will not boot,COMPUTER,Computer Lab,HIGH,OPEN,2026-11-11,None,operator
+8,Washroom tap broken,PLUMBING,Block B,MEDIUM,RESOLVED,2026-11-07,None,operator
+9,Fire extinguisher expired,SAFETY,Block A,CRITICAL,OPEN,2026-11-09,None,operator
+10,Classroom door lock jammed,FURNITURE,Room 9-A,HIGH,OPEN,2026-11-14,None,operator
+11,Smoke test,TEST,Lab,LOW,OPEN,2026-11-19,None,operator
