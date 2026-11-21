@@ -1,0 +1,25 @@
+id,admission_no,name,class_name,section,guardian,phone,source
+1,ADM1000,Aarav Sharma,8,A,Mr. Sharma,9810000000,demo
+2,ADM1001,Diya Patel,8,A,Mr. Patel,9810000001,demo
+3,ADM1002,Kabir Nair,8,A,Mr. Nair,9810000002,demo
+4,ADM1003,Ananya Rao,8,A,Mr. Rao,9810000003,demo
+5,ADM1004,Ishaan Verma,8,A,Mr. Verma,9810000004,demo
+6,ADM1005,Meera Iyer,8,A,Mr. Iyer,9810000005,demo
+7,ADM1006,Rohan Gupta,8,A,Mr. Gupta,9810000006,demo
+8,ADM1007,Sara Khan,8,A,Mr. Khan,9810000007,demo
+9,ADM1008,Vivaan Joshi,8,B,Mr. Joshi,9810000008,demo
+10,ADM1009,Aditi Menon,8,B,Mr. Menon,9810000009,demo
+11,ADM1010,Arjun Reddy,8,B,Mr. Reddy,9810000010,demo
+12,ADM1011,Nisha Bose,8,B,Mr. Bose,9810000011,demo
+13,ADM1012,Dev Malhotra,8,B,Mr. Malhotra,9810000012,demo
+14,ADM1013,Riya Chawla,8,B,Mr. Chawla,9810000013,demo
+15,ADM1014,Karan Pillai,8,B,Mr. Pillai,9810000014,demo
+16,ADM1015,Tanvi Desai,8,B,Mr. Desai,9810000015,demo
+17,ADM1016,Neel Kapoor,9,A,Mr. Kapoor,9810000016,demo
+18,ADM1017,Pooja Shetty,9,A,Mr. Shetty,9810000017,demo
+19,ADM1018,Yash Thakur,9,A,Mr. Thakur,9810000018,demo
+20,ADM1019,Ira Singh,9,A,Mr. Singh,9810000019,demo
+21,ADM1020,Manav Bansal,9,A,Mr. Bansal,9810000020,demo
+22,ADM1021,Sneha Kulkarni,9,A,Mr. Kulkarni,9810000021,demo
+23,ADM1022,Om Prakash,9,A,Mr. Prakash,9810000022,demo
+24,ADM1023,Zoya Ahmed,9,A,Mr. Ahmed,9810000023,demo

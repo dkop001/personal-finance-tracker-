@@ -4,8 +4,8 @@ import os
 import random
 from datetime import date, timedelta
 
-import mysql.connector
-from mysql.connector import Error
+import MySQLdb
+import MySQLdb.cursors
 
 HOST, USER, PASSWORD, DATABASE = "localhost", "root", "root", "campus_os"
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
@@ -71,10 +71,13 @@ ISSUES = [("Projector dead in Lab 2", "ELECTRICAL", "Lab 2", "CRITICAL", "OPEN",
 
 
 def connect(with_db=True):
+    args = {"host": HOST, "user": USER, "passwd": PASSWORD,
+            "charset": "utf8mb4", "connect_timeout": 8}
+    if with_db:
+        args["db"] = DATABASE
     try:
-        return mysql.connector.connect(host=HOST, user=USER, password=PASSWORD,
-                                       database=DATABASE if with_db else None)
-    except Error as exc:
+        return MySQLdb.connect(**args)
+    except MySQLdb.Error as exc:
         raise SystemExit(f"MYSQL OFFLINE: {exc}\nStart MySQL80, then check the details in db.py")
 
 
@@ -82,13 +85,13 @@ def rows(sql, args=()):
     """Run a SELECT and return a list of dicts; never raises into the UI."""
     try:
         conn = connect()
-        cursor = conn.cursor(dictionary=True)
+        cursor = conn.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute(sql, args)
         data = cursor.fetchall()
         cursor.close()
         conn.close()
-        return data
-    except Error as exc:
+        return list(data)
+    except (MySQLdb.Error, SystemExit) as exc:
         print(f"[SQL ERROR] {exc}")
         return []
 
@@ -106,7 +109,7 @@ def run(sql, args=()):
         cursor.execute(sql, args)
         conn.commit()
         return cursor.lastrowid or cursor.rowcount
-    except Error:
+    except MySQLdb.Error:
         conn.rollback()
         raise
     finally:
